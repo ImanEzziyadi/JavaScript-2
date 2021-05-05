@@ -1,0 +1,4 @@
+<li *ngIf="todo" class="d-flex justify-content-between  rounded align-item-center bg-light mb-2 px-3 p-2">
+    <h3 class=" mb-0" [class.completed]="todo.completed" (click)="toggleComplete(todo)">{{ todo.title }}</h3>
+    <button class="btn btn-danger"(click)="deleteTodo(todo)">X</button>
+</li>
